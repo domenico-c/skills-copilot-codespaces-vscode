@@ -1,17 +1,8 @@
-function skillsMemners () {
-  return {
-    restrict: 'E',
-    templateUrl: 'app/components/members/skills-members.html',
-    scope: {
-      members: '=',
-      skills: '=',
-      selected: '=',
-      onSelected: '&'
-    },
-    controller: function ($scope) {
-      $scope.onMemberSelected = function (member) {
-        $scope.onSelected({member: member});
-      };
-    }
+function skillsMember() {
+  var member = {
+    name: 'John Doe',
+    age: 30,
+    skills: ['js', 'html', 'css']
   };
+  return member;
 }
